@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SQLitePasteleria.Vistas.V_ProductosE">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#CCFFFF">
+            <Label Text="Pastelería Zoay"
+                TextColor="Brown" FontSize="Title"
+                HorizontalOptions="Center" />
+            <Label Text="Productos Detalle"
+                TextColor="Brown" FontSize="Subtitle"
+                HorizontalOptions="Center"  />
+            <Label x:Name="lblMensaje" HorizontalOptions="Center" />
+            <Entry Placeholder="Nombre producto" x:Name="txtNombrep" />
+            <Entry Placeholder="Precio producto" x:Name="txtPreciop" />
+            <Entry Placeholder="Descripción producto" x:Name="txtDescripcionp" />
+            <Entry Placeholder="Cantidad del producto" x:Name="txtCantidadp" />
+            <Button Text="Eliminar" x:Name="btn_eliminarP" BackgroundColor="NavajoWhite" CornerRadius="100"/>
+            <Button Text="Actualizar" x:Name="btn_actualizarP" BackgroundColor="LightCoral" CornerRadius="100"/>
+            <StackLayout Orientation="Vertical">
+                <Image Source="fondotree.jpg" HeightRequest="180" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

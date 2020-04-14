@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SQLitePasteleria.Vistas.V_TiendaR">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#663300">
+            <Label Text="Pastelería Zoay"
+                TextColor="Beige" FontSize="Title"
+                HorizontalOptions="Center" />
+            <Label Text="Tiendas Registro"
+                TextColor="Beige" FontSize="Subtitle"
+                HorizontalOptions="Center"  />
+            <Entry Placeholder="Nombre de la Tienda" x:Name="txtNombret" 
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Label Text="Dirección"  TextColor="Beige" FontSize="Subtitle"
+                HorizontalOptions="Center" />
+            <Entry Placeholder="Calle " x:Name="txtcallet" 
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Entry Placeholder="Numero Exterior" x:Name="txtNumext" Keyboard="Numeric"
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Entry Placeholder="Numero interior" x:Name="txtNumint"  Keyboard="Numeric"
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Entry Placeholder="Colonia" x:Name="txtColoniat" 
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+
+            <Button x:Name="btnGuardarT" Text="Guardar" HorizontalOptions="Center" 
+                    BackgroundColor="DarkSeaGreen" CornerRadius="15"/>
+            <StackLayout Orientation="Vertical">
+                <Image Source="fondotwo.jpg" HeightRequest="160"/>
+            </StackLayout>
+        </StackLayout>
+        </ContentPage.Content>
+</ContentPage>

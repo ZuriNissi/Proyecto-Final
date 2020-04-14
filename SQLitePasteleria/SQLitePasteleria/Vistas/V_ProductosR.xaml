@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SQLitePasteleria.Vistas.V_ProductosR">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#663300">
+            <Label Text="Pastelería Zoay"
+                TextColor="Beige" FontSize="Title"
+                HorizontalOptions="Center" />
+            <Label Text="Productos Registro"
+                TextColor="Beige" FontSize="Subtitle"
+                HorizontalOptions="Center"  />
+            <Entry Placeholder="Nombre producto" x:Name="txtNombrep" 
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Entry Placeholder="Precio del producto" x:Name="txtPreciop" Keyboard="Numeric" 
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Entry Placeholder="Descripción del producto" x:Name="txtDescripcionp" 
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+            <Entry Placeholder="Cantidad del producto" x:Name="txtCantidadp" Keyboard="Numeric"
+                   PlaceholderColor="Beige" TextColor="Beige"/>
+
+            <Button x:Name="btnGuardarR" Text="Guardar" HorizontalOptions="Center" 
+                    BackgroundColor="DarkSeaGreen" CornerRadius="15"/>
+            <StackLayout Orientation="Vertical">
+                <Image Source="fondotwo.jpg" HeightRequest="370"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

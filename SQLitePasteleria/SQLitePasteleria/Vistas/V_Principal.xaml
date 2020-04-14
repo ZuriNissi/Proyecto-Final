@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SQLitePasteleria.Vistas.V_Principal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Beige">
+        <Label Text="Pastelería Zoay" TextColor="Brown"
+                HorizontalOptions="Center" FontSize="Title" />
+            <BoxView/>
+           
+            <Button  x:Name="btnProductos" BackgroundColor="Brown" Text="Productos" 
+                     VerticalOptions="Fill" CornerRadius="100" TextColor="Beige"/>
+            <BoxView/>
+            
+            <Button x:Name="btnTiendas"  BackgroundColor="Brown" Text="Tiendas"
+                    VerticalOptions="Fill" CornerRadius="100" TextColor="Beige"/>
+            <BoxView/>
+            <Button x:Name="btnPasteles" BackgroundColor="Brown" Text="Pasteles"
+                    VerticalOptions="Fill" CornerRadius="100" TextColor="Beige"/>
+        <StackLayout Orientation="Vertical">
+            <Image Source="cake.jpg" HeightRequest="230"/>
+
+        </StackLayout>
+      </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

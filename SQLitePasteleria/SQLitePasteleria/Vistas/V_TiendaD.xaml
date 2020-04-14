@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SQLitePasteleria.Vistas.V_TiendaD">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="#CCFFFF">
+            <Label Text="Pastelería Zoay"
+                TextColor="Brown" FontSize="Title"
+                HorizontalOptions="Center" />
+            <Label Text="Tiendas Detalle"
+                TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Center"  />
+            <Label x:Name="lblMensajes" HorizontalOptions="Center" />
+                <Label Text="Nombre de la Tienda"  TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Start" />
+                <Entry Placeholder="Nombre de la Tienda" x:Name="txtNombretd" 
+                   PlaceholderColor="Beige" TextColor="Brown"/>
+                <Label Text="Dirección"  TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Center" />
+                <Label Text="Calle"  TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Start" />
+            <Entry Placeholder="Calle " x:Name="txtcalletd" 
+                   PlaceholderColor="Beige" TextColor="Brown" />
+                <Label Text="Numero Interior"  TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Start" />
+                <Entry Placeholder="Numero Exterior" x:Name="txtNumextd" 
+                   PlaceholderColor="Beige" TextColor="Brown"/>
+                <Label Text="Numero Exterior"  TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Start" />
+                <Entry Placeholder="Numero interior" x:Name="txtNumintd" 
+                   PlaceholderColor="Beige" TextColor="Brown"/>
+                <Label Text="Colonia"  TextColor="Brown" FontSize="Medium"
+                HorizontalOptions="Start" />
+                <Entry Placeholder="Colonia" x:Name="txtColoniatd" 
+                   PlaceholderColor="Beige" TextColor="Brown"/>
+            <Button Text="Eliminar" x:Name="btn_Eliminar" BackgroundColor="NavajoWhite" CornerRadius="100"/>
+                <Button Text="Actualizar" x:Name="btn_Actualizar" BackgroundColor="LightCoral" CornerRadius="100"/>
+            <StackLayout Orientation="Vertical">
+                <Image Source="fondotree.jpg" HeightRequest="370"/>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
